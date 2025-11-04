@@ -10,7 +10,7 @@ def load_data():
         y (numpy.ndarray): Encoded target values (integers).
         target_names (list): Original class names (status categories).
     """
-    df = pd.read_csv("../data/health_data.csv")
+    df = pd.read_csv("data/health_data.csv")
 
     X = df.drop("status", axis=1).values
 
